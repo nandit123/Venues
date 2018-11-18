@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/venuesRow"
+    android:orientation="vertical">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="10px"
+    android:text="McDonalds"
+    android:textSize="50dp"
+    android:textColor="@color/colorAccent"
+    android:textStyle="bold"
+    android:padding="5dp"
+    android:layout_margin="10dp"
+    android:id="@+id/item_title"
+    android:gravity="center_horizontal"
+    android:background="#ddd"/>
+</LinearLayout>
