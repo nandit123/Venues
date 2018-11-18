@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
                     stringLongitude = "" + location.getLongitude();
                     Log.i("INFO", "location: location" + location + stringLatitude + stringLongitude);
 //                    final String request_url = "https://api.foursquare.com/v2/venues/explore?client_id=LVLTBDJNW0MOJYHODY05KKICBZIBITPPCS2JKCNME1HDE0OW&client_secret=VILS0XSIRC2D22OWTDKZKWTHPLRL5HEV1K1Q5XAXTXROO3BA&v=20180323&ll=" + stringLatitude + "," + stringLongitude + "&query=coffee&limit=10";
-                    request_url = "https://api.foursquare.com/v2/venues/explore?client_id=XTO30HRCV3DZJ221MOKIV3XTBTE1OGKDHJE2SVQQHNJYJXON&client_secret=XZBEKOJ5AGQGMJ3OTG1ND1DDAJW0EZD1YAILUYWFOP0HLQG3&v=20180323&ll=" + stringLatitude + "," + stringLongitude + "&query=restaurant";
+                    request_url = "https://api.foursquare.com/v2/venues/explore?client_id=IXBWNFAW3TTSJV4VGAXOCYT0413STW4C5D05ANUPPXRFNOFZ&client_secret=EUTWE0FF51XINYPX14311URNYGIRANWSLC4OJT0W2YCPOO0E&v=20180323&ll=" + stringLatitude + "," + stringLongitude + "&query=restaurant";
                     Log.i("ashhutosh", request_url);
 
                     RetrieveVenueTask task = new RetrieveVenueTask(request_url);
@@ -189,7 +189,7 @@ public class MainActivity extends AppCompatActivity {
                         // now fetch photo Id
 
                         String VENUE_ID = venue.getString("id"); // will be used to fetch photo
-                        String photo_request_url = "https://api.foursquare.com/v2/venues/" + VENUE_ID + "/photos?client_id=XTO30HRCV3DZJ221MOKIV3XTBTE1OGKDHJE2SVQQHNJYJXON&client_secret=XZBEKOJ5AGQGMJ3OTG1ND1DDAJW0EZD1YAILUYWFOP0HLQG3&v=20180323";
+                        String photo_request_url = "https://api.foursquare.com/v2/venues/" + VENUE_ID + "/photos?client_id=IXBWNFAW3TTSJV4VGAXOCYT0413STW4C5D05ANUPPXRFNOFZ&client_secret=EUTWE0FF51XINYPX14311URNYGIRANWSLC4OJT0W2YCPOO0E&v=20180323";
 //                        https://api.foursquare.com/v2/venues/45e98bacf964a52080431fe3/photos?client_id=DHKYGCOKZFQAFIRXEQGD0KRBRGNQV0M1OLZDCV3WDX4B5U1E&client_secret=CLL5ZIYIEDB5TYZQUPFJ25TCMGO23TDNP1KUZTS5XLOKZ1S4&v=20180323
                         URL url2 = new URL(photo_request_url);
                         String imageURL;
